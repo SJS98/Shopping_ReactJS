@@ -1,0 +1,248 @@
+.App {
+    background-image: url("https://www.tendencias.kpmg.es/wp-content/uploads/2018/11/GettyImages-912949110.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+}
+
+.App::-webkit-scrollbar {
+    display: none;
+}
+
+.bg-body-tertiary {
+    background-color: transparent;
+    box-shadow: 0 0 10px -5px black;
+}
+
+
+.welcome-page{
+    height: 80vh;
+    width: 80vw;
+    box-shadow: 0 0 30px -10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+
+}
+
+/* Main-Content */
+
+/* Poster */
+.Poster {
+    height: 400px;
+}
+
+/* Products */
+
+.Products,
+.all-products {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.no-product-found {
+    text-align: center;
+    width: 100vw;
+    font: 25px Arial;
+}
+
+.product-not-found {
+    padding: 30px;
+    display: grid;
+}
+
+.Products .ProductCard {
+    max-height: 450px;
+    min-height: 450px;
+    box-shadow: 0 0 10px -6px #000;
+    position: relative;
+}
+
+.button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.profile-canvas {
+    border-radius: 20px;
+    box-shadow: 0 0 30px -15px;
+    margin: 100px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    display: flex;
+}
+
+.profile-btns {
+    display: flex;
+    justify-content: end;
+}
+
+.profile-btns * {
+    margin: 10px;
+}
+
+.profile-details,
+.product-list {
+    margin-bottom: 20px;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.update-profile-form {
+    height: 80vh;
+    background: rgba(255, 255, 255, .6);
+    backdrop-filter: blur(2px);
+    width: 70vw;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px -3px;
+    border-radius: 10px;
+}
+
+.update-profile-form .section1 {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.update-profile-form .section1 img {
+    height: 150px;
+    min-width: 150px;
+    margin: 30px 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px -4px;
+}
+
+.update-profile-form .section1 div {
+    box-shadow: inset 0 0 10px -4px;
+    height: 80px;
+    margin: 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.update-profile-form .section1 div * {
+    margin: 20px;
+}
+
+.profile-image {
+    height: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    border: 1px solid;
+    outline: none;
+}
+
+.update-profile-form .section2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+}
+
+.add-product-form {
+    height: 80vh;
+    background: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(2px);
+    width: 40vw;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px -3px;
+    border-radius: 10px;
+    text-align: center;
+}
+.add-product-form Input{
+    border: .5px solid #000;
+}
+.add-product-form h3 {
+    margin: 15px;
+}
+
+
+.add-product-form Button {
+    margin: 15px;
+}
+
+
+.product-canvas {
+    border-radius: 20px;
+    box-shadow: 0 0 30px -15px;
+    margin: 100px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    min-height: 200px;
+    position: relative;
+}
+.product-canvas .sell-btn{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+.product-canvas h3{
+    text-align: center;
+    margin: 20px 0;
+}
+.product-canvas span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font: 18px Arial;
+}
+
+.product-canvas .my-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    padding: 0 80px;
+}
